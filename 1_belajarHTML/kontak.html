@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Halaman Kontak</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="#">Kontak</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <hr>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <div>
+            <p>Formulir Kontak: </p>
+            <label for="inputBox">nama: </label>
+            <input id="inputBox" type="text" />
+        </div>
+        <div>
+            <p>Kewarganegaraan:</p>
+            <input id="radio1" type="radio" name="jdel" value="WNI"/>
+            <label for="radio1">WNI</label>
+            <input id="radio2" type="radio" name="jdel" value="asing"/>
+            <label for="radio2">Asing</label>
+        </div>
+        <div>
+            <p>Layanan:</p>
+            <input id="radio[1]" type="checkbox" />
+            <label for="radio1">WNI</label>
+            <input id="radio[2]" type="checkbox" />
+            <label for="radio2">Asing</label>
+        </div>
+        <div>
+            <button type="submit" id="tombolSubmit">Kirim</button>
+            <button type="insert" id="tombolHapus">Hapus</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
