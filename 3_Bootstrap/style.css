@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+--root {
+  --bg-black: #101010;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+header {
+  height: 240px;
+}
+
+hr {
+  width: 1900px;
+  margin: -6px;
+}
+
+a {
+  color: var(--bg-black);
+}
+
+header {
+  width: 1900px;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.nav__container {
+  display: flex;
+  gap: 5rem;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__text {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+
+.main__img {
+  float: left;
+}
+
+.main__title {
+  margin-bottom: 2rem;
+}
+
+.main__description {
+  font-size: 0.8rem;
+  text-align: justify;
+  max-width: 100ch;
+}
+
+.main__subcontainer {
+  margin-right: 1rem;
+}
+
+.main__link {
+  font-size: 0.8rem;
+}
+
+.header__container-detil {
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.main__container-detil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hr {
+  width: auto;
+}
+
+.main__description-detil {
+  text-align: justify;
+}
+
+/* Scrollbar theme */
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #650000;
+  outline: 1px solid black;
+}
