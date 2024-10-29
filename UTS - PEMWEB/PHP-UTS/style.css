@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+strong {
+  color: #2f4b8f;
+}
+
+/* Custom scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 8px rgba(106, 13, 145, 0.3); /* Alpha 0.3 untuk opacity rendah */
+}
+
+/* Custom scrollbar textarea */
+textarea::-webkit-scrollbar {
+  cursor: default;
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  cursor: default;
+  background: #0f172a;
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  cursor: default;
+  background-color: #be123c;
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  cursor: default;
+  background-color: #be123c;
+}
+
+/* Custom autofill input */
+input:-webkit-autofill {
+  background-color: #0f172a !important; /* Ganti dengan warna yang kamu inginkan */
+  color: #be123c; /* Warna teks */
+  -webkit-box-shadow: 0 0 0 1000px #0f172a inset; /* Mengisi latar belakang sepenuhnya */
+  transition: background-color 5000s ease-in-out 0s; /* Menahan warna agar tidak hilang */
+}
+
+/* Animation */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    border-right-color: #f43f5e;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+.typing {
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #f43f5e;
+  /* Animasi mengetik */
+  animation: typing 4s steps(40) 1s forwards, cursor 1s steps(1) infinite 5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Mulai dari luar layar (kiri) */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Berhenti di posisi aslinya */
+    opacity: 1; /* Muncul secara penuh */
+  }
+}
+
+.image {
+  height: 360px;
+  width: 240px;
+  opacity: 0;
+  animation: slideIn 2s ease forwards;
+}
+
+.text-transition {
+  color: white;
+  transition: color 0.7s ease;
+}
+
+.text-transition:hover {
+  color: #f43f5e;
+}
